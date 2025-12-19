@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student form</title>
+    <link rel="stylesheet" href="student.css">
+</head>
+<body>
+<div class="form">
+<form>
+    <label>Username:</label>
+    <input id="one" type="text" placeholder="Enter the Username"><br><br>
+    <label>Age:</label>
+    <input id="two" type="number" placeholder="Enter your age"><br><br>
+    <label>Gender:</label>
+    <input id="three" type="text" placeholder="Enter your gender"><br><br>
+    <label>Course:</label>
+    <input id="four" type="text"  list="courses" placeholder="Select or type your course"><br><br>
+    <datalist id ="courses">
+        <option value="JAVA"></option>
+        <option value="JavaScript"></option>
+        <option value="SQL"></option>
+        <option value="PYTHON"></option>
+        <option value="HTML"></option>
+        <option value="CSS"></option>    
+    </datalist>
+    <label for="email">E-mail :</label>
+   <input id="five" type="email" placeholder="Enter your email"><br><br>
+   <button type="button" onclick="update()" >Save</button>
+
+
+</form>
+</div>
+<h2>Saved table</h2>
+<table id="tab" border="1" cellpadding="10">
+    <tr>
+        <th>Name</th>
+        <th>Age</th>
+        <th>course</th>
+        <th>email</th>
+        <th>gender</th>
+        <th>Action</th> 
+    </tr>
+</table>
+    <script src="student.js"></script>
+</body>
+</html>
